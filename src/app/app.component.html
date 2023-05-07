@@ -1,0 +1,16 @@
+
+<h1 style="text-align: center; height: 100px; padding-top: 30px;">Assignment</h1>
+
+<div style="display: flex; flex-direction: row; height: 100vh">
+  <div style="flex: 1; background-color: rgb(255, 255, 255)" class="sidebar">
+    <br><br>
+    <ul style="list-style: none; padding: 0"><hr>
+      <li><a routerLink="award">Awards</a></li><hr>
+      <li><a routerLink="class">Class</a></li><hr>
+      <li><a routerLink="course">Courses</a></li><hr>
+    </ul>
+  </div>
+  <div style="flex: 4; overflow-y: scroll">
+    <router-outlet></router-outlet>
+  </div>
+</div>
