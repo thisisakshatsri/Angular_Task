@@ -11,13 +11,17 @@
         </tr>
       </thead>
       <tbody>
-        <ng-container *ngFor="let permission of awardPermissions">
+        <!-- Have created another component defined for displaying the data, so we can use that -->
+        <!-- <ng-container *ngFor="let permission of awardPermissions">
           <tr *ngFor="let permission of awardPermissions  | searchText : name;">
             <td>{{ permission.id }}</td>
             <td>{{ permission.name }}</td>
             <td>{{ permission.entityType }}</td>
           </tr>
-        </ng-container>
+        </ng-container> -->
+
+        <!-- Calling list component to show data -->
+        <list [data]="classPermission"></list>
       </tbody>
     </table>
   </div>
